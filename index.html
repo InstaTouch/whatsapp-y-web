@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+</head>
+<body>
+    <!-- Botón para WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=51994064048" target="_blank">
+        Enviar mensaje por WhatsApp
+    </a>
+
+    <!-- Enlace a tu página web -->
+    <a href="https://www.ontouchcard.com" target="_blank">
+        Visita mi sitio web
+    </a>
+
+    <!-- Tu contenido web aquí -->
+    <p>Bienvenido a mi sitio web. ¡Explora y disfruta!</p>
+    <!-- Agrega más contenido según tus necesidades -->
+
+    <!-- Fin de tu contenido web -->
+
+    <!-- Script para abrir WhatsApp en una nueva ventana -->
+    <script>
+        document.querySelector('a[href^="https://api.whatsapp.com"]').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.open(this.href, '_blank');
+        });
+    </script>
+</body>
+</html>
